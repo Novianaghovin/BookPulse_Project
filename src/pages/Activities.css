@@ -1,0 +1,197 @@
+.activities {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .dashboard-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Books Section */
+  .book-categories {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .book-category h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-category ul {
+    padding-left: 1rem;
+  }
+  
+  .book-category li {
+    padding: 0.3rem 0;
+    color: #7f8c8d;
+  }
+  
+  /* Chart Styles */
+  .chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    margin: 1rem 0;
+  }
+  
+  .chart-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bar {
+    width: 40px;
+    background: #3498db;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    margin: 0 5px;
+    transition: height 0.3s ease;
+  }
+  
+  .bar-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #2c3e50;
+  }
+  
+  .bar-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Input Section */
+  .hours-input {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .hours-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .hours-input button {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    transition: background 0.2s;
+  }
+  
+  .hours-input button:hover {
+    background: #2980b9;
+  }
+  
+  /* Metric Boxes */
+  .metric-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  .metric-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .metric-label {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Genre Chart */
+  .genre-item {
+    margin: 1rem 0;
+  }
+  
+  .genre-bar {
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+  }
+  
+  .bar-fill {
+    height: 100%;
+    background: #e74c3c;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .genre-name {
+    display: block;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .genre-count {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  /* Activity List */
+  .activity-list {
+    padding-left: 1rem;
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .bullet {
+    color: #2ecc71;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .book-categories {
+      grid-template-columns: 1fr;
+    }
+  }

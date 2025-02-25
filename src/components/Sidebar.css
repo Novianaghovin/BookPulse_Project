@@ -1,0 +1,71 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover,
+  .sidebar ul li a.active {
+    color: #007bff;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 260px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .sidebar.closed + .sidebar-toggle {
+    left: 10px;
+  }
+  
+  .sidebar-logo {
+    width: 200px;  /* Adjust the size of your logo */
+    height: auto;
+    margin-right: 5px;  /* Space between the logo and the text */
+  }
+  

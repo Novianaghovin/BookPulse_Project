@@ -1,0 +1,111 @@
+/* themes.css */
+:root {
+    /* Light Theme (Default) */
+    --light-primary-bg: #ffffff; /* White background */
+    --light-secondary-bg: #f5f5f5; /* Light gray background */
+    --light-text-color: #333333; /* Dark gray text for better contrast */
+    --light-accent-color: #007bff; /* Blue accent */
+  
+    /* Dark Theme */
+    --dark-primary-bg: #1a1a1a; /* Very dark gray background */
+    --dark-secondary-bg: #2d2d2d; /* Slightly lighter dark gray */
+    --dark-text-color: #f5f5f5; /* Light gray text for better contrast */
+    --dark-accent-color: #61dafb; /* Light blue accent */
+  
+    /* Pastel Pink Theme */
+    --pink-primary-bg: #fff0f5; /* Light pink background */
+    --pink-secondary-bg: #ffd6e5; /* Slightly darker pink */
+    --pink-text-color: #4a4a4a; /* Dark gray text for better contrast */
+    --pink-accent-color: #ff69b4; /* Pink accent */
+  }
+  
+  /* Apply Light Theme by Default */
+  body {
+    --primary-bg: var(--light-primary-bg);
+    --secondary-bg: var(--light-secondary-bg);
+    --text-color: var(--light-text-color);
+    --accent-color: var(--light-accent-color);
+  }
+  
+  /* Dark Theme */
+  body.dark-theme {
+    --primary-bg: var(--dark-primary-bg);
+    --secondary-bg: var(--dark-secondary-bg);
+    --text-color: var(--dark-text-color);
+    --accent-color: var(--dark-accent-color);
+  }
+  
+  /* Pastel Pink Theme */
+  body.pink-theme {
+    --primary-bg: var(--pink-primary-bg);
+    --secondary-bg: var(--pink-secondary-bg);
+    --text-color: var(--pink-text-color);
+    --accent-color: var(--pink-accent-color);
+  }
+  
+  /* Ensure all text is readable */
+  body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: Arial, sans-serif; /* Use a readable font */
+    line-height: 1.6; /* Improve line spacing */
+  }
+  
+  /* Improve readability for links */
+  a {
+    color: var(--accent-color);
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Improve readability for buttons */
+  button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Improve readability for tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-bg);
+  }
+  
+  th {
+    background-color: var(--secondary-bg);
+    font-weight: bold;
+  }
+  
+  /* Improve readability for input fields */
+  input, textarea {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--secondary-bg);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }

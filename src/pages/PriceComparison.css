@@ -1,0 +1,66 @@
+/* PriceComparison.css */
+.price-comparison-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Start from the top */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  
+  .table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the table container */
+    overflow-x: auto;
+  }
+  
+  .Table {
+    width: 100%;
+    margin: 0 auto; /* Center the table */
+    color: #212529;
+    border-collapse: collapse; /* Ensure borders are merged */
+    border: 2px solid #dee2e6; /* Add border to the table */
+  }
+  
+  .Table th,
+  .Table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6; /* Add border to table cells */
+  }
+  
+  .Table thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6; /* Thicker border for header */
+  }
+  
+  .Table tbody tr:hover {
+    background-color: #f1f1f1; /* Hover effect for rows */
+  }
+  
+  .best-price {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .btn-link {
+    padding: 0;
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }

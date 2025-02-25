@@ -1,0 +1,112 @@
+/* Books.css */
+.book-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .book-list-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .filters-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-input,
+  .dropdown-filter,
+  .rating-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-bg);
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  .rating-filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-filter input {
+    flex: 1;
+  }
+  
+  .table-and-rating-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .rating-bar,
+  .year-sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sort-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .sort-button:hover {
+    opacity: 0.9;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .books-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  .books-table th,
+  .books-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-bg);
+  }
+  
+  .books-table th {
+    background-color: var(--secondary-bg);
+    font-weight: bold;
+  }
+  
+  .books-table tbody tr:hover {
+    background-color: var(--secondary-bg);
+  }
+  
+  .rating-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    font-size: 14px;
+  }
+  
+  .no-results {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+  }
